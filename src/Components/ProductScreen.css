@@ -1,0 +1,78 @@
+.roww{
+    display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.roww.top{
+    align-items: flex-start;
+}
+.back{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    cursor: pointer;
+}
+.back:hover{
+  color: #8bc34a;
+}
+
+.card {
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    /* margin-right: 1rem; */
+  }
+  
+  .description{
+      font-size: 15px;
+      margin: 0;
+      
+      color: #c0c0c0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .price{
+      font-size: 20px;
+  }
+  button{
+      padding: 0.5rem;
+      font-size: 1.3rem;
+      border-radius: 0.5rem;
+      border: 0.1rem white solid;
+      cursor: pointer;
+  }
+  button:hover{
+      border: 0.1rem black solid;
+  }
+  button.primary{
+      background-color: black;
+      color: white;
+  }
+  button.block{
+      width: 100%;
+  }
+
+  .col-1 {
+    flex: 1 1 20rem;
+  }
+  .col-2 {
+    flex: 0.5 1 25rem;
+    margin-left: 15px;
+  }
+  .col-3 {
+    flex: 1 1 15rem;
+    
+  }
+  img.large {
+    max-width: 50rem;
+    width: 100%;
+  }
+  .success {
+    color: #20a020;
+  }
+  .error {
+    color: #a02020;
+  }

@@ -1,0 +1,13 @@
+.alert{
+    padding: 1rem;
+    border: 0.1 solid transparent;
+    border: o0.5rem;
+}
+.alert-info{
+    color: pink;
+    background-color: black;
+}
+.alert-danger{
+    color: red;
+    background-color: aliceblue;
+}
