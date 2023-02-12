@@ -1,9 +1,9 @@
 import React from 'react'
-import { Navigate , useHistory} from 'react-router-dom';
+import { Link, Redirect, useHistory} from 'react-router-dom';
 import AuthUser from './AuthUser';
-import authHeader from './auth-Header'
 import axios from 'axios'
-import SecuredPage from './SecuredPage';
+import authHeader from './auth-Header';
+
 
 export default function Dashboard() {
     // const navigate = useNavigate();
@@ -33,7 +33,11 @@ export default function Dashboard() {
             </>
         )
     }else{
-        return  <Navigate to={"/login"} />;
+        return (
+            <>
+            <Redirect to='/login' />
+            </>
+        )
     }
   
 }

@@ -9,6 +9,7 @@ import SearchByCatagory from './Components/SearchByCatagory';
 import CartScreen from './Components/CartScreen';
 import PaytmService from './Components/PaymentPage'
 import Login from './Components/Login'
+import Dashboard from './Components/dashboard';
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
             <Route path="/search/:keyword" component={SearchByCatagory}></Route>
             <Route path="/cart/:id?" component={CartScreen}></Route>
             <Route path="/payment" component={PaytmService}></Route>
+            <Route path="/welcome" component={Dashboard}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/" >
               {/* Home Page */}

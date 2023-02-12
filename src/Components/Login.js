@@ -14,7 +14,7 @@ export default function Login() {
     http.post('/token',{username:username,password:password}).then((res)=>{
       console.log(res.data);
       setToken(res.data.token,res.data.userDetails)
-      history.push("/welcome");
+      history.push("/");
       getUserRole();
     })
   }
