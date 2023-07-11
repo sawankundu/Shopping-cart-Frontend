@@ -1,7 +1,6 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import { cartReducer } from '../Reducers/CartReducers';
-
+import {cartReducer} from '../../../Reducers/CartReducers';
 
 const initialStare = {
   cart:{

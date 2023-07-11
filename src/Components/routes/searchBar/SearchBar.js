@@ -32,7 +32,7 @@ function SearchBar() {
                 onChange={(e) => setKeyword(e.target.value.toLocaleLowerCase())}
             />
             
-            <IoClose className='CloseIcon'/>
+            {/* <IoClose className='CloseIcon'/> */}
             
 
 
