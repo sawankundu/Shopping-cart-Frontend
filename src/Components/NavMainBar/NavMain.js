@@ -9,7 +9,7 @@ import { Link, Redirect, useHistory } from "react-router-dom";
 import AuthUser from "../AuthUser";
 import navMain from "./navMain.css";
 
-function NavMain({firstName}) {
+function NavMain({ firstName }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const history = useHistory();
   const { isLoggedIn, doLogout, getUser } = AuthUser();
@@ -50,7 +50,7 @@ function NavMain({firstName}) {
                     </h2>
                   </div>
                   <div>
-                    <p>Pop-up content goes here...</p>
+                    <p>Filter options goes here...</p>
                   </div>
 
                   {/* Logout */}

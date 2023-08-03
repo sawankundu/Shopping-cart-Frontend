@@ -41,7 +41,9 @@ export default function ProductScreen(props) {
     return (
       <>
         <Header />
-
+        {pro.length === 0 ? (
+        <p>Loading...</p>
+      ) : (
         <div>
           <Link className="productscreen_back" to="/">
             Back
@@ -111,6 +113,7 @@ export default function ProductScreen(props) {
             </div>
           </div>
         </div>
+                              )}
       </>
     );
   }
